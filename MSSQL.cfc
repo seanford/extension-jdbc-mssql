@@ -21,7 +21,6 @@
 	)>
 	
 	
-	
 	<cfset data=struct()>
 
 	
@@ -40,12 +39,12 @@
 	
 	<cffunction name="getName" returntype="string" output="no"
 		hint="returns display name of the driver">
-		<cfreturn "MSSQL - Microsoft SQL Server (Vendor Microsoft)">
+		<cfreturn "Microsoft SQL Server (JDBC4 - Vendor Microsoft)">
 	</cffunction>
 	
 	<cffunction name="getDescription" returntype="string" output="no"
 		hint="returns description for the driver">
-		<cfreturn "Microsoft SQL Server Driver from Microsoft">
+		<cfreturn "Microsoft SQL Server Driver from Microsoft. This is a Type 4 JDBC driver that provides database connectivity through the standard JDBC application program interfaces (APIs) available in Java Platform, Enterprise Edition 5, 6, 7, and 8.">
 	</cffunction>
 
 	<cffunction name="equals" returntype="boolean" output="false"
