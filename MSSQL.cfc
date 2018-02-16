@@ -37,15 +37,20 @@
 		hint="returns array of fields">
 		<cfreturn fields>
 	</cffunction>
-	
+
 	<cffunction name="getName" returntype="string" output="no"
 		hint="returns display name of the driver">
-		<cfreturn "Microsoft SQL Server (JDBC4 - Vendor Microsoft)">
+		<cfreturn "{label}">
+	</cffunction>
+
+	<cffunction name="getId" returntype="string" output="no"
+		hint="returns the ID of the driver">
+		<cfreturn "{id}">
 	</cffunction>
 	
 	<cffunction name="getDescription" returntype="string" output="no"
 		hint="returns description for the driver">
-		<cfreturn "Microsoft SQL Server Driver from Microsoft. This is a Type 4 JDBC driver that provides database connectivity through the standard JDBC application program interfaces (APIs) available in Java Platform, Enterprise Edition 5, 6, 7, and 8.">
+		<cfreturn {description}>
 	</cffunction>
 
 	<cffunction name="equals" returntype="boolean" output="false"
