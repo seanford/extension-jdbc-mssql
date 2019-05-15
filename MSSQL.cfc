@@ -1,7 +1,7 @@
 <cfcomponent extends="types.Driver" output="false" implements="types.IDatasource">
 	<cfset this.className="{class-name}">
 	<cfset this.bundleName="{bundle-name}">
-	<cfset this.dsn="jdbc:sqlserver://{host}:{port}">
+	<cfset this.dsn="{connection-string}">
 		
 	<cfset this.type.port=this.TYPE_FREE>
 	<cfset this.value.host="localhost">
